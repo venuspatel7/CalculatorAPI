@@ -11,7 +11,7 @@ public class UnitTest1
     
     //addition..............................................
 [TestMethod]
-        public void TestAddsimplenumber()
+        public void TestAdd1()
         {
 
             CalculatorController controller = new CalculatorController();
@@ -28,7 +28,7 @@ public class UnitTest1
             Assert.AreEqual(8, (decimal)(result as OkObjectResult).Value);
         }
         [TestMethod]
-        public void TestAddWithNegativeNumbers()
+        public void TestAdd2()
         {
              CalculatorController controller = new CalculatorController();
 
@@ -44,7 +44,7 @@ public class UnitTest1
         }
 
         [TestMethod]
-        public void TestAddWithZero()
+        public void TestAdd3()
         {
              CalculatorController controller = new CalculatorController();
 
@@ -61,7 +61,7 @@ public class UnitTest1
         }
 
         [TestMethod]
-        public void TestAddWithLargeNumbers()
+        public void TestAdd4()
         {
              CalculatorController controller = new CalculatorController();
 
@@ -78,7 +78,7 @@ public class UnitTest1
         }
 
         [TestMethod]
-        public void TestAddWithDecimalNumbers()
+        public void TestAdd5()
         {
              CalculatorController controller = new CalculatorController();
 
@@ -96,7 +96,7 @@ public class UnitTest1
 
         //subtraction method............................................
         [TestMethod]
-        public void TestSubtract()
+        public void TestSubtract1()
         {
                CalculatorController controller = new CalculatorController();
             
@@ -111,7 +111,7 @@ public class UnitTest1
             Assert.AreEqual(2, (decimal)(result as OkObjectResult).Value);
         }
          [TestMethod]
-        public void TestSubtractNegativeResult()
+        public void TestSubtract2()
         {
             
                CalculatorController controller = new CalculatorController();
@@ -128,7 +128,7 @@ public class UnitTest1
         }
 
         [TestMethod]
-        public void TestSubtractWithZero()
+        public void TestSubtract3()
         {
             
                CalculatorController controller = new CalculatorController();
@@ -145,7 +145,7 @@ public class UnitTest1
         }
 
         [TestMethod]
-        public void TestSubtractWithNegativeZero()
+        public void TestSubtract4()
         {
             
                CalculatorController controller = new CalculatorController();
@@ -162,7 +162,7 @@ public class UnitTest1
         }
 
         [TestMethod]
-        public void TestSubtractWithNegativeValues()
+        public void TestSubtract5()
         {
             
                CalculatorController controller = new CalculatorController();
@@ -179,7 +179,7 @@ public class UnitTest1
         }
         //multiplication..............................................
         [TestMethod]
-public void TestMultiplyPositiveNumbersReturnsCorrectResult()
+public void TestMultiply1()
 {
     
     CalculatorController controller = new CalculatorController();
@@ -195,7 +195,7 @@ public void TestMultiplyPositiveNumbersReturnsCorrectResult()
 }
 
 [TestMethod]
-public void TestMultiplyNegativeNumbersReturnsCorrectResult()
+public void TestMultiply2()
 {
     
     CalculatorController controller = new CalculatorController();
@@ -211,7 +211,7 @@ public void TestMultiplyNegativeNumbersReturnsCorrectResult()
 }
 
 [TestMethod]
-public void TestMultiplyPositiveAndNegativeNumbersReturnsCorrectResult()
+public void TestMultiplyP3()
 {
     
     CalculatorController controller = new CalculatorController();
@@ -227,7 +227,7 @@ public void TestMultiplyPositiveAndNegativeNumbersReturnsCorrectResult()
 }
 
 [TestMethod]
-public void TestMultiplyByZeroReturnsZero()
+public void TestMultiply4()
 {
     
     CalculatorController controller = new CalculatorController();
@@ -242,7 +242,7 @@ public void TestMultiplyByZeroReturnsZero()
     Assert.AreEqual(0, (decimal)(result as OkObjectResult).Value);
 }
 [TestMethod]
-public void TestMultiplyDecimalNumbersReturnsCorrectResult()
+public void TestMultiply5()
 {
     
     CalculatorController controller = new CalculatorController();
