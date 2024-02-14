@@ -66,15 +66,15 @@ public class UnitTest1
              CalculatorController controller = new CalculatorController();
 
             
-            decimal a = 10000000000000000000m; // 10^19
-            decimal b = 20000000000000000000m; // 2 * 10^19
+            decimal a = 10000000000000000000m; // 
+            decimal b = 20000000000000000000m; // 
 
             
             var result = controller.Add(a, b);
 
             
             Assert.IsNotNull(result);
-            Assert.AreEqual(30000000000000000000m, (decimal)(result as OkObjectResult).Value); // 3 * 10^19
+            Assert.AreEqual(30000000000000000000m, (decimal)(result as OkObjectResult).Value); // 
         }
 
         [TestMethod]
